@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>AirdBD</title>
+	<meta charset="utf-8">
+	<meta name="vierport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+	.jumbotron {
+		background-color: #5f77dd; /* blue */
+		background-size: cover;
+		padding-top: 10%;
+		padding-bottom: 0%;
+		color: #ffffff;
+	}
+</style>
+
+<body>
+
+    <!-- CSS Styles -->
+	<style>
+		.navbar {
+			  margin-bottom: 0;
+			  background-color: #554488; /* purple */
+			  z-index: 9999;
+			  border: 0;
+			  font-size: 12px !important;
+			  line-height: 1.42857143 !important;
+			  letter-spacing: 4px;
+			  border-radius: 0;
+		}
+
+		.navbar li a, .navbar .navbar-brand {
+  			color: #fff !important;
+		}
+
+		.navbar-nav li a:hover, .navbar-nav li.active a {
+		  	color: blue !important;
+		  	background-color: #fff !important;
+		}
+
+		.navbar-default .navbar-toggle {
+		  	border-color: transparent;
+		  	color: #fff !important;
+		}
+	</style>
+
+
+    <!-- Navigation Bar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  	<div class="container">
+	    	<div class="navbar-header">
+	      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+	      		</button>
+	      		<a class="navbar-brand" href="../home.html">AirdBD</a>
+	    	</div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      	<ul class="nav navbar-nav navbar-left">
+			        <li><a href="../model-cities.html">CITIES</a></li>
+			        <li><a href="../model-flights.html">FLIGHTS</a></li>
+			        <li><a href="../model-airports.html">AIRPORTS</a></li>
+			        <li><a href="../model-airplanes.html">AIRPLANES</a></li>
+			        <li><a href="../about.html">ABOUT</a></li>
+		      	</ul>
+		    </div>
+	  	</div>
+	</nav>
+
+
+    <!-- Jumbotron Title Section -->
+	<div class="jumbotron text-center"></div>
+
+
+    <!-- More CSS Styles -->
+	<style>
+		.logo {
+		  font-size: 150px;
+		}
+		.bg-grey {
+		  background-color: #e0eeff; /* light blue */
+		}
+		.container-fluid {
+		  padding: 10px 50px;
+		}
+        .container-fluid-narrow {
+          padding: 1px 10px;
+        }
+		.button {
+		  background-color: #77bbff; /* medium blue */
+		  color: white;
+		  font-weight: bold;
+		}
+        .noisescore {
+          color: #dd3322; /* Red */
+        }
+	</style>
+
+
+    <!-- Main Content of Page -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-6">
+
+                <!-- Airplane Name -->
+                <div class="container-fluid">
+                    <h1><strong>Boeing 737-700</strong></h1>
+                </div>
+
+                <!-- Decibel Rating -->
+                <div class="container-fluid-narrow bg-grey noisescore">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <h4><strong>Decibel Rating:</strong></h4>
+                        </div>
+                        <div class="col-sm-5">
+                            <h4>51.33</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Manufacturer -->
+                <div class="container-fluid-narrow">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <h4><strong>Manufacturer:</strong></h4>
+                        </div>
+                        <div class="col-sm-5">
+                            <h4>Boeing</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Engine Type -->
+                <div class="container-fluid-narrow bg-grey">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <h4><strong>Engine Type:</strong></h4>
+                        </div>
+                        <div class="col-sm-5">
+                            <h4>GE/Snecma CFM56-7B</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Air Speed -->
+                <div class="container-fluid-narrow">
+                     <div class="row">
+                        <div class="col-sm-7">
+                            <h4><strong>Air Speed:</strong></h4>
+                        </div>
+                        <div class="col-sm-5">
+                            <h4>650 mph</h4>
+                        </div>
+                    </div>                   
+                </div>
+
+                <!-- Number in Fleet -->
+                <div class="container-fluid-narrow bg-grey">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <h4><strong>Number in US Fleet:</strong></h4>
+                        </div>
+                        <div class="col-sm-5">
+                            <h4>586</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Percentage of Fleet -->
+                <div class="container-fluid-narrow">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <h4><strong>Percentage of US Fleet:</strong></h4>
+                        </div>
+                        <div class="col-sm-5">
+                            <h4>8.0%</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frequent Airports -->
+                <div class="container-fluid-narrow bg-grey">
+                    <h4><strong>Frequent Airports:</strong></h4>
+                    <div class="container-fluid-narrow">
+                        <div class="row">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-5">
+                                <h5><strong>Airport</strong></h5>
+                            </div>
+                            <div class="col-sm-6">
+                                <h5><strong>Flights per Day with This Plane</strong></h5>
+                            </div>
+                        </div>
+                        <a href="../model-airports/airport-instance1.html">
+                            <div class="row">
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-5">
+                                    <h5>ABIA</h5>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>16</h5>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="../model-airports/airport-instance3.html">
+                            <div class="row">
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-5">
+                                    <h5>SAT</h5>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>12</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-sm-5">
+
+                <!-- Airplane Image -->
+                <div class="container-fluid">
+                    <img src="../pics/Airplane_Boeing_737-700.jpg" width=400>
+                </div>
+
+                <!-- Recent Flights -->
+                <div class="container-fluid-narrow bg-grey">
+                    <h4><strong>Recent Flights:</strong></h4>
+                    <div class="container-fluid-narrow">
+                        <div class="row">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-2">
+                                <h5><strong>Src</strong></h5>
+                            </div>
+                            <div class="col-sm-3">
+                                <h5><strong>Dest</strong></h5>
+                            </div>
+                            <div class="col-sm-6">
+                                <h5><strong>Takeoff Time</strong></h5>
+                            </div>
+                        </div>
+                        <a href="../model-flights/flight-instance2.html">
+                            <div class="row">
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-2">
+                                    <h5>ABIA</h5>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h5>DFW</h5>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>9/30 4:55PM</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- More More CSS Styles -->
+	<style>
+	footer .glyphicon {
+	  font-size: 20px;
+	  margin-bottom: 20px;
+	  color: blue;
+	}
+	</style>
+
+
+    <!-- Footer Note -->
+	<footer class="container-fluid text-center">
+	  <a href="#myPage" title="To Top">
+	    <span class="glyphicon glyphicon-chevron-up"></span>
+	  </a>
+	  <p>Project of CS373 2019Fall</p>
+	</footer>
+
+</body>
+</html>

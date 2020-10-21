@@ -1,0 +1,78 @@
+<!-- navigation bar -->
+	<style>
+		.navbar {
+			  margin-bottom: 0;
+			  background-color: #554488; /* purple background color*/
+			  z-index: 9999;
+			  border: 0;
+			  font-size: 12px !important;
+			  line-height: 1.42857143 !important;
+			  letter-spacing: 4px;
+			  border-radius: 0;
+		}
+
+		.navbar li a, .navbar .navbar-brand {
+  			color: #fff !important; /* white text color */
+		}
+
+		.navbar-nav li a:hover, .navbar-nav li.active a {
+		  	color: #554488 !important; /* purple text color when hover*/
+		  	background-color: #fff !important; /* white background color when hover */
+		}
+
+		.navbar-default .navbar-toggle {
+		  	border-color: transparent;
+		  	color: #fff !important;
+		}
+	</style>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+	<!-- Important!! If your page is in model folders, use this one below, or 
+	change the href to direct to the frontend folder -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  	<div class="container">
+	    	<div class="navbar-header">
+	      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+	      		</button>
+	      		<a class="navbar-brand" href="../home.html">AirdBD</a>
+	    	</div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      	<ul class="nav navbar-nav navbar-left">
+			        <li><a href="../model-cities.html">CITIES</a></li>
+			        <li><a href="../model-flights.html">FLIGHTS</a></li>
+			        <li><a href="../model-airports.html">AIRPORTS</a></li>
+			        <li><a href="../model-airplanes.html">AIRPLANES</a></li>
+			        <li><a href="../about.html">ABOUT</a></li>
+		      	</ul>
+		    </div>
+	  	</div>
+	</nav>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+	<!-- Important!! If your page is in frontend folders, use this one below -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  	<div class="container">
+	    	<div class="navbar-header">
+	      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+	      		</button>
+	      		<a class="navbar-brand" href="home.html">AirdBD</a>
+	    	</div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      	<ul class="nav navbar-nav navbar-left">
+			        <li><a href="model-cities.html">CITIES</a></li>
+			        <li><a href="model-flights.html">FLIGHTS</a></li>
+			        <li><a href="model-airports.html">AIRPORTS</a></li>
+			        <li><a href="model-airplanes.html">AIRPLANES</a></li>
+			        <li><a href="about.html">ABOUT</a></li>
+		      	</ul>
+		    </div>
+	  	</div>
+	</nav>

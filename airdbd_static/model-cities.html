@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>AirdBD</title>
+	<meta charset="utf-8">
+	<meta name="vierport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+	.jumbotron {
+		background-color: #5f77dd; /* blue */
+		background-size: cover;
+		padding-top: 10%;
+		padding-bottom: 10%;
+		color: #ffffff;
+	}
+</style>
+
+<body>
+
+    <!-- CSS Styles -->
+	<style>
+		.navbar {
+			  margin-bottom: 0;
+			  background-color: #554488; /* purple */
+			  z-index: 9999;
+			  border: 0;
+			  font-size: 12px !important;
+			  line-height: 1.42857143 !important;
+			  letter-spacing: 4px;
+			  border-radius: 0;
+		}
+
+		.navbar li a, .navbar .navbar-brand {
+  			color: #fff !important;
+		}
+
+		.navbar-nav li a:hover, .navbar-nav li.active a {
+		  	color: blue !important;
+		  	background-color: #fff !important;
+		}
+
+		.navbar-default .navbar-toggle {
+		  	border-color: transparent;
+		  	color: #fff !important;
+		}
+	</style>
+
+
+    <!-- Navigation Bar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  	<div class="container">
+	    	<div class="navbar-header">
+	      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+	      		</button>
+	      		<a class="navbar-brand" href="home.html">AirdBD</a>
+	    	</div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      	<ul class="nav navbar-nav navbar-left">
+			        <li><a href="model-cities.html">CITIES</a></li>
+			        <li><a href="model-flights.html">FLIGHTS</a></li>
+			        <li><a href="model-airports.html">AIRPORTS</a></li>
+			        <li><a href="model-airplanes.html">AIRPLANES</a></li>
+			        <li><a href="about.html">ABOUT</a></li>
+		      	</ul>
+		    </div>
+	  	</div>
+	</nav>
+
+
+    <!-- Jumbotron Title Section -->
+	<div class="jumbotron text-center">
+	  	<h1>Cities</h1>
+        <p>Noise ratings for most cities in the continental US.</p>
+	</div>
+
+
+    <!-- More CSS Styles -->
+	<style>
+		.logo {
+		  font-size: 150px;
+		}
+		.bg-grey {
+		  background-color: #e0eeff; /* light blue */
+		}
+		.container-fluid {
+		  padding: 10px 50px;
+		}
+		.button {
+		  background-color: #77bbff; /* medium blue */
+		  color: white;
+		  font-weight: bold;
+		}
+        .noisescore {
+          color: #dd3322; /* Red */
+        }
+	</style>
+
+
+    <!-- Main Content of Page -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4"><h1><strong>City</strong></h1></div>
+            <div class="col-sm-2"><h3><strong>State</strong></h3></div>
+            <div class="col-sm-2"><h3><strong>Population</strong></h3></div>
+            <div class="col-sm-2 noisescore"><h3><strong>Noise Score</strong></h3></div>
+        </div>
+    </div>
+
+	<div class="container-fluid bg-grey">
+        <div class="row"><a href="model-cities/city-instance1.html">
+            <div class="col-sm-2"><img src="pics/City_Austin.jpg", height=70></div>
+            <div class="col-sm-4"><h1>Austin</h1></div>
+            <div class="col-sm-2"><h3>Texas</h3></div>
+            <div class="col-sm-2"><h3>100,000</h3></div>
+            <div class="col-sm-2 noisescore"><h3>5.5</h3></div>
+        </a></div>
+	</div>
+
+	<div class="container-fluid">
+        <div class="row"><a href="model-cities/city-instance2.html">
+            <div class="col-sm-2"><img src="pics/City_Fort_Worth.jpg", height=70></div>
+            <div class="col-sm-4"><h1>Fort Worth</h1></div>
+            <div class="col-sm-2"><h3>Texas</h3></div>
+            <div class="col-sm-2"><h3>42,000</h3></div>
+            <div class="col-sm-2 noisescore"><h3>6.2</h3></div>
+        </a></div>
+	</div>
+
+	<div class="container-fluid bg-grey">
+        <div class="row"><a href="model-cities/city-instance3.html">
+            <div class="col-sm-2"><img src="pics/City_San_Antonio.jpg", height=70></div>
+            <div class="col-sm-4"><h1>San Antonio</h1></div>
+            <div class="col-sm-2"><h3>Texas</h3></div>
+            <div class="col-sm-2"><h3>69,069</h3></div>
+            <div class="col-sm-2 noisescore"><h3>3.0</h3></div>
+        </a></div>
+	</div>
+
+
+    <!-- More More CSS Styles -->
+	<style>
+	footer .glyphicon {
+	  font-size: 20px;
+	  margin-bottom: 20px;
+	  color: blue;
+	}
+	</style>
+
+
+    <!-- Footer Note -->
+	<footer class="container-fluid text-center">
+	  <a href="#myPage" title="To Top">
+	    <span class="glyphicon glyphicon-chevron-up"></span>
+	  </a>
+	  <p>Project of CS373 2019Fall</p>
+	</footer>
+
+</body>
+</html>

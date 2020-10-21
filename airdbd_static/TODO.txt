@@ -1,0 +1,37 @@
+*************************************
+Finish html pages by 2pm on Wednesday
+*************************************
+
+Vivian:
+    4 model pages
+        * model-cities.html
+        * model-airports.html
+        * model-airplanes.html
+        * model-flights.html
+    3 flight instance pages
+        * model-flights/flight-instance1.html
+        * model-flights/flight-instance2.html
+        * model-flights/flight-instance3.html
+
+Annan:
+    1 home page
+        * home.html
+    3 city instance pages
+        * model-cities/city-instance1.html
+        * model-cities/city-instance2.html
+        * model-cities/city-instance3.html
+    3 airplane instance pages
+        * model-airplanes/airplane-instance1.html
+        * model-airplanes/airplane-instance2.html
+        * model-airplanes/airplane-instance3.html
+
+Silvana:
+    1 about page
+        * about.html
+    3 airport instance pages
+        * model-airports/airport-instance1.html
+        * model-airports/airport-instance2.html
+        * model-airports/airport-instance3.html
+
+
+

@@ -1,14 +1,103 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Snake Game v1.0</title>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.sound.js"></script>
-    <script type="text/javascript" src="main.js"></script>
-    <script type="text/javascript" src="snake.js"></script>
-  </head>
-  <body>
-  </body>
+<html lang="en">
+<head>
+  <title>Annan Wang</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-position: center center;
+  
+    background-image: url('img/back.JPG');
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+  
+    /* Background image is fixed in the viewport so that it doesn't move when 
+        the content's height is greater than the image's height */
+    background-attachment: fixed;
+    
+    /* This is what makes the background image rescale based
+        on the container's size */
+    background-size: cover;
+    
+    /* Set a background color that will be displayed
+        while the background image is loading */
+    background-color: #464646;
+  }
+  .bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+  </style>
+</head>
+<body>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <!-- <h3 class="margin">Who Am I?</h3> -->
+  <img src="img/headshot.jpeg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+  <h3>I'm an adventurer</h3>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+    <h3 class="margin">As a Computer Science Student</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    <a href="https://www.linkedin.com/in/annanwang/" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-search"></span> Linkedin
+    </a>
+  </div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">Project Demo</h3><br>
+  <div class="row">
+    <div class="col-sm-6">
+      <h4>Simple Snake Game</h4>
+      <p>Snake game with speed changing function and history score system</p>
+      <p><a href="snake/index.html">Try it out</a></p> 
+      <img src="img/snake.png" class="img-responsive margin displayed" style="width:50%" alt="Image">
+    </div>
+    <div class="col-sm-6"> 
+      <h4>Air decibel Database</h4>
+      <p>Group project created with python and React. Source code can be found <a href="https://gitlab.com/fyerfox/airdbd">here</a>.
+      </p>
+      <p><a href="airdbd_static/home.html">Static demo of the website</a></p> 
+      <img src="img/airdbd.png" class="img-responsive margin displayed" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-1 text-center">
+    <!-- <p><a href="https://www.linkedin.com/in/annanwang/">My Linkedin</a></p>  -->
+  </footer>
+</body>
 </html>

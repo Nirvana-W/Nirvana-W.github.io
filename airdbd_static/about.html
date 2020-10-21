@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>AirdBD</title>
+	<meta charset="utf-8">
+	<meta name="vierport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+	.jumbotron {
+		background-color: #5f77dd; /* blue */
+		background-size: cover;
+		padding-top: 10%;
+		padding-bottom: 10%;
+		color: #ffffff;
+	}
+</style>
+
+<body>
+
+    <!-- CSS Styles -->
+	<style>
+		.navbar {
+			  margin-bottom: 0;
+			  background-color: #554488; /* purple */
+			  z-index: 9999;
+			  border: 0;
+			  font-size: 12px !important;
+			  line-height: 1.42857143 !important;
+			  letter-spacing: 4px;
+			  border-radius: 0;
+		}
+
+		.navbar li a, .navbar .navbar-brand {
+  			color: #fff !important;
+		}
+
+		.navbar-nav li a:hover, .navbar-nav li.active a {
+		  	color: blue !important;
+		  	background-color: #fff !important;
+		}
+
+		.navbar-default .navbar-toggle {
+		  	border-color: transparent;
+		  	color: #fff !important;
+		}
+	</style>
+
+
+    <!-- Navigation Bar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  	<div class="container">
+	    	<div class="navbar-header">
+	      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+	      		</button>
+	      		<a class="navbar-brand" href="home.html">AirdBD</a>
+	    	</div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      	<ul class="nav navbar-nav navbar-left">
+			        <li><a href="model-cities.html">CITIES</a></li>
+			        <li><a href="model-flights.html">FLIGHTS</a></li>
+			        <li><a href="model-airports.html">AIRPORTS</a></li>
+			        <li><a href="model-airplanes.html">AIRPLANES</a></li>
+			        <li><a href="about.html">ABOUT</a></li>
+		      	</ul>
+		    </div>
+	  	</div>
+	</nav>
+
+
+    <!-- Jumbotron Title Section -->
+	<div class="jumbotron text-center">
+	  	<h1>About AirdBD</h1>
+        <p>&nbsp</p>
+	</div>
+
+
+    <!-- More CSS Styles -->
+	<style>
+		.logo {
+		  font-size: 150px;
+		}
+		.bg-grey {
+		  background-color: #e0eeff; /* light blue */
+		}
+        .bg-white {
+          background-color: #ffffff; /* white */
+        }
+		.container-fluid {
+		  padding: 30px 50px;
+		}
+		.bg-blue {
+		  background-color: #77bbff; /* medium blue */
+		  color: white;
+		}
+        .noisescore {
+          color: #dd3322; /* Red */
+        }
+	</style>
+
+
+    <!-- Site Summary/Description -->
+    <div class="container-fluid">
+        <h2>What this site is about</h2>
+        <p>
+            Don't like to hear noisy airplanes flying over your head?
+            We don't either. To help you find a nice, quiet place to live,
+            we gather air traffic data to determine where you will be the
+            least bothered by air traffic.
+            For any location in the continental United States, we assign it
+            a "noise score" from 1 to 10 based on several factors, such as:
+        </p>
+        </p><ul>
+            <li>How often planes pass overhead</li>
+            <li>The altitude and engine loudness ratings of those planes</li>
+            <li>Proximity to airports</li>
+        </ul></p>
+    </div>
+
+    <!-- Group Members Section -->
+	<div class="container-fluid bg-grey">
+        <h2>Group Members</h2>
+        <div class="container-fluid">
+            <div class="row">
+
+                <!-- Danny Tran -->
+                <div class="col-sm-3">
+                    <div class="container-fluid bg-blue">
+                        <img src="pics/Member_Danny.jpg" width=150>
+                        <br>
+                        <h4><strong>Danny Tran</strong></h4>
+                        <h5>Backend</h5>
+                        <p>
+                            <!-- TODO -->
+                            Junior CS student at UT Austin. Likes coding and gaming
+                            and has a black cat named Phantom.
+                        </p>
+                        <table>
+                            <tr>
+                                <td>Commits..................</td>
+                                <td id="danny_commits">0</td>
+                            </tr>
+                            <tr>
+                                <td>Issues......................</td>
+                                <td id="danny_issues">0</td> 
+                            </tr>
+                            <tr>
+                                <td>Unit Tests................</td>
+                                <td id="danny_unittests">0</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Annan Wang -->
+                <div class="col-sm-3">
+                    <div class="container-fluid bg-blue">
+                        <img src="pics/Member_Annan.jpg" width=150>
+                        <br>
+                        <h4><strong>Annan Wang</strong></h4>
+                        <h5>Frontend</h5>
+                        <p>
+                            Junior CS student at UT Austin. Loves coding, gaming, traveling and photography.
+                        </p>
+                        <table>
+                            <tr>
+                                <td>Commits..................</td>
+                                <td id="annan_commits">0</td>
+                            </tr>
+                            <tr>
+                                <td>Issues......................</td>
+                                <td id="annan_issues">0</td> 
+                            </tr>
+                            <tr>
+                                <td>Unit Tests................</td>
+                                <td id="annan_unittests">0</td>
+                            </tr>
+                        </table> 
+                    </div>
+                </div>
+
+                <!-- Vivian Cox -->
+                <div class="col-sm-3">
+                    <div class="container-fluid bg-blue">
+                        <img src="pics/Member_Vivian.jpg" width=150>
+                        <br>
+                        <h4><strong>Vivian Cox</strong></h4>
+                        <h5>Frontend</h5>
+                        <p>
+                            Senior CS student at UT Austin. Enjoys music and
+                            cats. Owns a skateboard for the aesthetic.
+                        </p>
+                        <table>
+                            <tr>
+                                <td>Commits..................</td>
+                                <td id="vivian_commits">0</td>
+                            </tr>
+                            <tr>
+                                <td>Issues......................</td>
+                                <td id="vivian_issues">0</td> 
+                            </tr>
+                            <tr>
+                                <td>Unit Tests................</td>
+                                <td id="vivian_unittests">0</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Silvana Borgo -->
+                <div class="col-sm-3">
+                    <div class="container-fluid bg-blue">
+                        <img src="pics/Member_Silvana.jpg" width=150>
+                        <br>
+                        <h4><strong>Silvana Borgo</strong></h4>
+                        <h5>Frontend</h5>
+                        <p>
+                            Junior CS student at UT Austin. Born and raised in 
+                            Mexico. Loves playing basketball.
+                        </p>
+                        <table>
+                            <tr>
+                                <td>Commits..................</td>
+                                <td id="silvana_commits">0</td>
+                            </tr>
+                            <tr>
+                                <td>Issues......................</td>
+                                <td id="silvana_issues">0</td> 
+                            </tr>
+                            <tr>
+                                <td>Unit Tests................</td>
+                                <td id="silvana_unittests">0</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br>
+	</div>
+
+    <!-- Statistics -->
+	<div class="container-fluid">
+        <h2>Statistics</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="container-fluid bg-blue">
+                        <h2>Total Commits:</h2>
+                        <h3 id="total_commits">0</h3>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="container-fluid bg-blue">
+                        <h2>Total Issues:</h2>
+                        <h3 id="total_issues">0</h3>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="container-fluid bg-blue">
+                        <h2>Total Unit Tests:</h2>
+                        <h3 id="total_unittests">0</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Data Sources -->
+	<div class="container-fluid bg-grey">
+        <h2>Data Sources</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3><a href="https://www.opensky-network.org/apidoc">Open Sky Network</a></h3>
+                    <p><em>
+                        A service that tracks airplane flights in real time, including both flight information
+                        and exact 3-dimensional coordinates of the airplanes.
+                    </em></p>
+                    <p>
+                        Open Sky does not maintain data about past flights. It provides only real-time information.
+                        We obtain data over a timeframe by continuously monitoring Open Sky over a rolling period
+                        of two weeks.
+                    </p>
+                    <p>
+                        At any given moment, we are tracking many US flights currently in progress
+                        by querying Open Sky at set intervals of time to reconstruct the plane's path through the sky.
+                        By monitoring many flights continuously like this, we can obtain the most up-to-date data and
+                        generate accurate statistics.
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h3><a href="https://geodb-cities-api.wirefreethought.com/">GeoDB Cities</a></h3>
+                    <p><em>
+                        Information about cities, including state, population, precise latitude and longitude, and more.
+                    </em></p>
+                    <p>
+                        We obtained our initial list of cities and associated information by scraping this database.
+                        This gives us our list of cities to track. Periodically, we query GeoDB Cities on the cities
+                        we're tracking and update our data, just to keep current records of data that changes over
+                        time, such as population.
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h3><a href="https://developer.here.com/documentation/geocoder/topics/what-is.html">Here Geocoder</a></h3>
+                    <p><em>
+                       API that can translate addresses into lat/long coordinates, and vise versa. 
+                    </em></p>
+                    <p>
+                        We use this API to translate user-provided addresses into coordinates, so we can dynamically
+                        generate a noise score based on any location. We also use the Geocoder to convert coordinates
+                        into an address for the purpose of validating that the given location is within the continental
+                        United States.
+                    </p>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <!-- Tools -->
+    <div class="container-fluid">
+        <h2>Tools</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+
+                    <!-- TODO -->
+                    <h3>Bootstrap</h3>
+                    <p><em>
+                        A HTML/CSS framework for creating reponsive websites
+                    </em></p>
+                </div>
+                <div class="col-sm-3">
+
+                    <!-- TODO -->
+                    <h3>GitLab</h3>
+                    <p><em>
+                        Remote git repository hosting service
+                    </em></p>
+                </div>
+                <div class="col-sm-3">
+
+                    <!-- TODO -->
+                    <h3>Postman</h3>
+                    <p><em>
+                        Tool for designing RESTful APIs
+                    </em></p>
+                </div>
+                <div class="col-sm-3">
+
+                    <!-- TODO -->
+                    <h3>Amazon Web Services (AWS)</h3>
+                    <p><em>
+                        Backend toolset for hosting online services
+                    </em></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Links -->
+    <div class="container-fluid bg-grey">
+        <h2>Links</h2>
+        <p><a href="https://gitlab.com/fyerfox/airdbd">Gitlab Repo</a></p>
+
+        <!-- TODO -->
+        <p><a href=
+"https://documenter.getpostman.com/view/9026345/SVtR3WTD?version=latest">
+Postman API</a></p>
+    </div>
+
+
+    <!-- More More CSS Styles -->
+	<style>
+	footer .glyphicon {
+	  font-size: 20px;
+	  margin-bottom: 20px;
+	  color: blue;
+	}
+	</style>
+
+
+    <!-- Footer Note -->
+	<footer class="container-fluid text-center">
+	  <a href="#myPage" title="To Top">
+	    <span class="glyphicon glyphicon-chevron-up"></span>
+	  </a>
+	  <p>Project of CS373 2019Fall</p>
+	</footer>
+
+    <script src="./about.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>AirdBD</title>
+	<meta charset="utf-8">
+	<meta name="vierport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+	.jumbotron {
+		background-color: #5f77dd; /* blue */
+		background-size: cover;
+		padding-top: 10%;
+		padding-bottom: 0%;
+		color: #ffffff;
+	}
+</style>
+
+<body>
+
+    <!-- CSS Styles -->
+	<style>
+		.navbar {
+			  margin-bottom: 0;
+			  background-color: #554488; /* purple */
+			  z-index: 9999;
+			  border: 0;
+			  font-size: 12px !important;
+			  line-height: 1.42857143 !important;
+			  letter-spacing: 4px;
+			  border-radius: 0;
+		}
+
+		.navbar li a, .navbar .navbar-brand {
+  			color: #fff !important;
+		}
+
+		.navbar-nav li a:hover, .navbar-nav li.active a {
+		  	color: blue !important;
+		  	background-color: #fff !important;
+		}
+
+		.navbar-default .navbar-toggle {
+		  	border-color: transparent;
+		  	color: #fff !important;
+		}
+	</style>
+
+
+    <!-- Navigation Bar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  	<div class="container">
+	    	<div class="navbar-header">
+	      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+	      		</button>
+	      		<a class="navbar-brand" href="../home.html">AirdBD</a>
+	    	</div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      	<ul class="nav navbar-nav navbar-left">
+			        <li><a href="../model-cities.html">CITIES</a></li>
+			        <li><a href="../model-flights.html">FLIGHTS</a></li>
+			        <li><a href="../model-airports.html">AIRPORTS</a></li>
+			        <li><a href="../model-airplanes.html">AIRPLANES</a></li>
+			        <li><a href="../about.html">ABOUT</a></li>
+		      	</ul>
+		    </div>
+	  	</div>
+	</nav>
+
+
+    <!-- Jumbotron Title Section -->
+	<div class="jumbotron text-center"></div>
+
+
+    <!-- More CSS Styles -->
+	<style>
+		.logo {
+		  font-size: 150px;
+		}
+		.bg-grey {
+		  background-color: #e0eeff; /* light blue */
+		}
+		.container-fluid {
+		  padding: 10px 50px;
+		}
+        .container-fluid-narrow {
+          padding: 1px 10px;
+        }
+		.button {
+		  background-color: #77bbff; /* medium blue */
+		  color: white;
+		  font-weight: bold;
+		}
+        .noisescore {
+          color: #dd3322; /* Red */
+        }
+	</style>
+
+
+    <!-- Main Content of Page -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-6">
+
+                <!-- Airport Name -->
+                <div class="container-fluid">
+                    <h1><strong>Dallas/Fort Worth International Airport</strong></h1>
+                </div>
+
+                <!-- City -->
+                <div class="container-fluid-narrow bg-grey">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <h4><strong>City:</strong></h4>
+                        </div>
+                        <div class="col-sm-5">
+                            <a href="../model-cities/city-instance2.html">
+                                <h4>Fort Worth</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Abbreviation -->
+                <div class="container-fluid-narrow">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <h4><strong>Abbreviation:</strong></h4>
+                        </div>
+                        <div class="col-sm-5">
+                            <h4>DFW</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Number of Flights Daily -->
+                <div class="container-fluid-narrow bg-grey">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <h4><strong>Average Number of Flights Daily:</strong></h4>
+                        </div>
+                        <div class="col-sm-5">
+                            <h4>730</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Busiest Weekday -->
+                <div class="container-fluid-narrow">
+                     <div class="row">
+                        <div class="col-sm-7">
+                            <h4><strong>Busiest Weekday:</strong></h4>
+                        </div>
+                        <div class="col-sm-5">
+                            <h4>Friday</h4>
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+
+            <div class="col-sm-5">
+
+                <!-- Airport Image -->
+                <div class="container-fluid">
+                    <img src="../pics/Airport_DFW.jpg" width=400>
+                </div>
+
+                <!-- Recent Flights (Outgoing) -->
+                <div class="container-fluid-narrow bg-grey">
+                    <h4><strong>Recent Flights (Outgoing):</strong></h4>
+                    <div class="container-fluid-narrow">
+                        <div class="row">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-5">
+                                <h5><strong>Destination</strong></h5>
+                            </div>
+                            <div class="col-sm-6">
+                                <h5><strong>Takeoff Time</strong></h5>
+                            </div>
+                        </div>
+
+                        <a href="../model-flights/flight-instance1.html">
+                            <div class="row">
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-5">
+                                    <h5>ABIA</h5>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>10/01 10:34PM</h5>
+                                </div>
+                            </div>
+                        </a>
+                   </div>
+                </div>
+
+                <!-- Recent Flights (Incoming) -->
+                <div class="container-fluid-narrow bg-grey">
+                    <h4><strong>Recent Flights (Incoming):</strong></h4>
+                    <div class="container-fluid-narrow">
+                        <div class="row">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-5">
+                                <h5><strong>Source</strong></h5>
+                            </div>
+                            <div class="col-sm-6">
+                                <h5><strong>Landing Time</strong></h5>
+                            </div>
+                        </div>
+
+                        <a href="../model-flights/flight-instance3.html">
+                            <div class="row">
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-5">
+                                    <h5>ABIA</h5>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>9/30 12:38PM</h5>
+                                </div>
+                            </div>
+                        </a>
+                   </div>
+                </div> 
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- More More CSS Styles -->
+	<style>
+	footer .glyphicon {
+	  font-size: 20px;
+	  margin-bottom: 20px;
+	  color: blue;
+	}
+	</style>
+
+
+    <!-- Footer Note -->
+	<footer class="container-fluid text-center">
+	  <a href="#myPage" title="To Top">
+	    <span class="glyphicon glyphicon-chevron-up"></span>
+	  </a>
+	  <p>Project of CS373 2019Fall</p>
+	</footer>
+
+</body>
+</html>

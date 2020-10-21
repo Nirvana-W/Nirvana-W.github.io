@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>AirdBD</title>
+	<meta charset="utf-8">
+	<meta name="vierport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+	.jumbotron {
+		background-color: #5f77dd; /* blue */
+		background-size: cover;
+		padding-top: 10%;
+		padding-bottom: 10%;
+		color: #ffffff;
+	}
+</style>
+
+<body>
+
+    <!-- CSS Styles -->
+	<style>
+		.navbar {
+			  margin-bottom: 0;
+			  background-color: #554488; /* purple */
+			  z-index: 9999;
+			  border: 0;
+			  font-size: 12px !important;
+			  line-height: 1.42857143 !important;
+			  letter-spacing: 4px;
+			  border-radius: 0;
+		}
+
+		.navbar li a, .navbar .navbar-brand {
+  			color: #fff !important;
+		}
+
+		.navbar-nav li a:hover, .navbar-nav li.active a {
+		  	color: blue !important;
+		  	background-color: #fff !important;
+		}
+
+		.navbar-default .navbar-toggle {
+		  	border-color: transparent;
+		  	color: #fff !important;
+		}
+	</style>
+
+
+    <!-- Navigation Bar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  	<div class="container">
+	    	<div class="navbar-header">
+	      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+	      		</button>
+	      		<a class="navbar-brand" href="home.html">AirdBD</a>
+	    	</div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      	<ul class="nav navbar-nav navbar-left">
+			        <li><a href="model-cities.html">CITIES</a></li>
+			        <li><a href="model-flights.html">FLIGHTS</a></li>
+			        <li><a href="model-airports.html">AIRPORTS</a></li>
+			        <li><a href="model-airplanes.html">AIRPLANES</a></li>
+			        <li><a href="about.html">ABOUT</a></li>
+		      	</ul>
+		    </div>
+	  	</div>
+	</nav>
+
+
+    <!-- Jumbotron Title Section -->
+	<div class="jumbotron text-center">
+	  	<h1>Flights</h1>
+        <p>Flights we've tracked over the past two weeks.</p>
+	</div>
+
+
+    <!-- More CSS Styles -->
+	<style>
+		.logo {
+		  font-size: 150px;
+		}
+		.bg-grey {
+		  background-color: #e0eeff; /* light blue */
+		}
+		.container-fluid {
+		  padding: 0px 50px;
+		}
+		.button {
+		  background-color: #77bbff; /* medium blue */
+		  color: white;
+		  font-weight: bold;
+		}
+        .noisescore {
+          color: #dd3322; /* Red */
+        }
+	</style>
+
+
+    <!-- Main Content of Page -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-1"><h3><strong>#</strong></h3></div>
+            <div class="col-sm-3"><h3><strong>Source</strong></h3></div>
+            <div class="col-sm-3"><h3><strong>Destination</strong><h3></div>
+            <div class="col-sm-2"><h3><strong>Takeoff Time</strong></h3></div>
+            <div class="col-sm-2"><h3><strong>Landing Time</strong></h3></div>
+            <div class="col-sm-1"><h3><strong>Duration</strong></h3></div>
+        </div>
+    </div>
+
+	<div class="container-fluid bg-grey">
+        <div class="row"><a href="model-flights/flight-instance1.html">
+            <div class="col-sm-1"><h3>1041</h3></div>
+            <div class="col-sm-3"><h3>Fort Worth, TX</h3></div>
+            <div class="col-sm-3"><h3>Austin, TX</h3></div>
+            <div class="col-sm-2"><h3>10/01 10:34AM</h3></div>
+            <div class="col-sm-2"><h3>10/01 1:10PM</h3></div>
+            <div class="col-sm-1"><h3>2:36</h3></div>
+        </a></div>
+	</div>
+
+	<div class="container-fluid">
+        <div class="row"><a href="model-flights/flight-instance2.html">
+            <div class="col-sm-1"><h3>2880</h3></div>
+            <div class="col-sm-3"><h3>Austin, TX</h3></div>
+            <div class="col-sm-3"><h3>San Antonio, TX</h3></div>
+            <div class="col-sm-2"><h3>9/30 4:55PM</h3></div>
+            <div class="col-sm-2"><h3>9/30 8:30PM</h3></div>
+            <div class="col-sm-1"><h3>3:35</h3></div>
+        </a></div>
+    </div>
+
+	<div class="container-fluid bg-grey">
+        <div class="row"><a href="model-flights/flight-instance3.html">
+            <div class="col-sm-1"><h3>9011</h3></div>
+            <div class="col-sm-3"><h3>Austin, TX</h3></div>
+            <div class="col-sm-3"><h3>Fort Worth, TX</h3></div>
+            <div class="col-sm-2"><h3>9/30 9:21AM</h3></div>
+            <div class="col-sm-2"><h3>9/30 12:38PM</h3></div>
+            <div class="col-sm-1"><h3>3:17</h3></div>
+        </a></div>
+    </div>
+
+
+    <!-- More More CSS Styles -->
+	<style>
+	footer .glyphicon {
+	  font-size: 20px;
+	  margin-bottom: 20px;
+	  color: blue;
+	}
+	</style>
+
+
+    <!-- Footer Note -->
+	<footer class="container-fluid text-center">
+	  <a href="#myPage" title="To Top">
+	    <span class="glyphicon glyphicon-chevron-up"></span>
+	  </a>
+	  <p>Project of CS373 2019Fall</p>
+	</footer>
+
+</body>
+</html>

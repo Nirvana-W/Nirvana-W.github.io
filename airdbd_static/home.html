@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- title -->
+<head>
+	<title>AirdBD</title>
+	<meta charset="utf-8">
+	<meta name="vierport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- navigation bar -->
+	<style>
+		.navbar {
+			  margin-bottom: 0;
+			  background-color: #554488; /* purple background color*/
+			  z-index: 9999;
+			  border: 0;
+			  font-size: 12px !important;
+			  line-height: 1.42857143 !important;
+			  letter-spacing: 4px;
+			  border-radius: 0;
+		}
+
+		.navbar li a, .navbar .navbar-brand {
+  			color: #fff !important; /* white text color */
+		}
+
+		.navbar-nav li a:hover, .navbar-nav li.active a {
+		  	color: #554488 !important; /* purple text color when hover*/
+		  	background-color: #fff !important; /* white background color when hover */
+		}
+
+		.navbar-default .navbar-toggle {
+		  	border-color: transparent;
+		  	color: #fff !important;
+		}
+
+		/*!!!sliding!!!*/
+		.slideanim{visibility:hidden;}
+		.slide {
+		    animation-name: slide;
+		    -webkit-animation-name: slide;
+		    animation-duration: 1s;
+		    -webkit-animation-duration: 1s;
+		    visibility: visible;
+		}
+		/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+		@keyframes slide {
+		  0% {
+		    opacity: 0;
+		    transform: translateY(70%);
+		  }
+		  100% {
+		    opacity: 1;
+		    transform: translateY(0%);
+		  }
+		}
+		@-webkit-keyframes slide {
+		  0% {
+		    opacity: 0;
+		    -webkit-transform: translateY(70%);
+		  }
+		  100% {
+		    opacity: 1;
+		    -webkit-transform: translateY(0%);
+		  }
+		}
+	</style>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  	<div class="container">
+	    	<div class="navbar-header">
+	      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+	      		</button>
+	      		<a class="navbar-brand" href="home.html">AirdBD</a>
+	    	</div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      	<ul class="nav navbar-nav navbar-left">
+			        <li><a href="model-cities.html">CITIES</a></li>
+			        <li><a href="model-flights.html">FLIGHTS</a></li>
+			        <li><a href="model-airports.html">AIRPORTS</a></li>
+			        <li><a href="model-airplanes.html">AIRPLANES</a></li>
+			        <li><a href="about.html">ABOUT</a></li>
+		      	</ul>
+		    </div>
+	  	</div>
+	</nav>
+
+	<!-- jumbotron -->
+	<style>
+		.jumbotron {
+			background-color: #5f77dd; /* blue */
+			background-size: cover;
+			padding-top: 15%;
+			padding-bottom: 15%;
+			color: #ffffff;
+		}
+		.fix {
+			position: absolute;
+			right: 80%;
+			width: 15%;
+			top: 10%;
+			height: 20%;
+		}
+	</style>
+
+	<div class="jumbotron text-center">
+	  	<h1>Air deciBel Database</h1>
+	  	<h3>Live quietly</h3>
+	  	<!-- <img class="fix" src="./pics/home_icon_plane.png"> -->
+	</div>
+
+	<!-- containers -->
+	<style>
+		.logo {
+		  font-size: 150px;
+		}
+		.bg-blue {
+		  background-color: #e0eeff; /* light blue */
+		}
+		.container-fluid {
+		  padding: 5% 15%;
+		}
+		.button-blue {
+		  background-color: #77bbff; /* medium blue */
+		  color: white;
+		  font-weight: bold;
+		}
+		.button-white {
+		  background-color: white; 
+		  color: #77bbff; /* medium blue */
+		  font-weight: bold;
+		}
+		.relative {
+			position: relative;
+			left: 35%;
+			width: 60%;
+		}
+	</style>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-4">
+	  			<h2><strong>Cities</strong></h2>
+				<h4>We give almost every city in the U.S. a score according to their air noises.</h4>
+				<p>Want to know which city is quiet?</p>
+	  			<button class="btn btn-default btn-lg button-blue" onclick="window.location.href = 'model-cities.html';">Find it out</button>
+	  		</div>
+	  		<div class = "col-sm-8 slideanim">
+	  			<img class="relative" src="./pics/home_city.jpg">
+	    	</div>
+	    </div>
+	</div>
+
+	<div class="container-fluid bg-blue">
+		<div class="row">
+			<div class = "col-sm-8 slideanim">
+	  			<img src="./pics/home_flight.jpg" style="width:60%">
+	    	</div>
+			<div class="col-sm-4">
+				<h2><strong>Flights</strong></h2>
+				<h4>We track over hundreds of thousands flights to prove you with the most accurate data we can get.</h4>
+				<p>Want to know how much noise the flight you take can make?</p>
+				<button class="btn btn-default btn-lg button-white" onclick="window.location.href = 'model-flights.html';">Take a look</button>
+			</div>
+	    </div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-4">
+	  			<h2><strong>Airports</strong></h2>
+				<h4>We collect nearly all the flights data of each airport in the U.S.</h4>
+				<p>Want to know how busy an airport is?</p>
+	  			<button class="btn btn-default btn-lg button-blue" onclick="window.location.href = 'model-airports.html';">Check it out</button>
+	  		</div>
+	  		<div class = "col-sm-8 slideanim">
+	  			<img class="relative" src="./pics/home_airport.jpg">
+	    	</div>
+	    </div>
+	</div>
+
+	<div class="container-fluid bg-blue">
+		<div class="row">
+			<div class = "col-sm-8 slideanim">
+	  			<img src="./pics/home_airplane.jpg" style="width:60%">
+	    	</div>
+			<div class="col-sm-4">
+				<h2><strong>Airplanes</strong></h2>
+				<h4>We list all the airplane models that are currently flying us to our destinations, including their engine type, max capacity, etc.</h4>
+				<p>Curious about how much noice the plane you take last time can make??</p>
+				<button class="btn btn-default btn-lg button-white" onclick="window.location.href = 'model-airplanes.html';">Have a look</button>
+			</div>
+	    </div>
+	</div>
+
+	<!-- footer -->
+	<style>
+	footer .glyphicon {
+	  font-size: 20px;
+	  margin-bottom: 20px;
+	  color: blue;
+	}
+	</style>
+
+	<footer class="container-fluid text-center">
+	  <a href="#" title="To Top">
+	    <span class="glyphicon glyphicon-chevron-up"></span>
+	  </a>
+	  <p>Project of CS373 2019Fall</p>
+	</footer>
+
+	<!-- Make the footer click scroll to top more smoothly, doesn't work here -->
+	<!-- <script>
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links in navbar + footer link
+	  $("footer a[href='#myPage']").on('click', function(event) {
+
+	   // Make sure this.hash has a value before overriding default behavior
+		  if (this.hash !== "") {
+
+		    // Prevent default anchor click behavior
+		    event.preventDefault();
+
+		    // Store hash
+		    var hash = this.hash;
+
+		    // Using jQuery's animate() method to add smooth page scroll
+		    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+		    $('html, body').animate({
+		      scrollTop: $(hash).offset().top
+		    }, 900, function(){
+
+		      // Add hash (#) to URL when done scrolling (default click behavior)
+		      window.location.hash = hash;
+	      	});
+	      } // End if
+	  });
+	})
+	</script> -->
+
+<!-- 	Element sliding -->
+	<script>
+	  $(window).scroll(function() {
+	    $(".slideanim").each(function(){
+	      var pos = $(this).offset().top;
+
+	      var winTop = $(window).scrollTop();
+	        if (pos < winTop + 600) {
+	          $(this).addClass("slide");
+	        }
+	    });
+	  });
+	</script>
+</body>
+</html>
