@@ -44,8 +44,8 @@
     color: #555555;
   }
   .bg-4 { 
-    background-color: #2f2f2f; /* Black Gray */
-    color: #fff;
+    background-color: #c0c0c0; /* Black Gray */
+    color: rgb(0, 0, 0);
   }
   .container-fluid {
     padding-top: 70px;
@@ -55,6 +55,24 @@
     display: block;
     margin-left: auto;
     margin-right: auto }
+
+  .skill {
+  border: 1px solid #50a9d1;
+  margin-right: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: auto;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 1.33333em;
+  padding: 7px 18px;
+  margin-top: 0.8em;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
   </style>
 </head>
 <body>
@@ -94,11 +112,36 @@
       <img src="img/airdbd.png" class="img-responsive margin displayed" style="width:100%" alt="Image">
     </div>
   </div>
+  <div class="row bg-4">
+    <div class="col-sm-6">
+      <h4>DOTA2 Personal Statistics</h4>
+      <p>A project works in project that intended to generate an analysis report from user's DOTA2 game matches.</p>
+      <!-- <p><a href="snake/index.html">Try it out</a></p>  -->
+      <img src="img/dota2.jpg" class="img-responsive margin displayed" style="width:50%" alt="Image">
+      <!-- <span class="skill">python</span> -->
+    </div>
+    <div class="col-sm-6"> 
+      <h4>Pintos System</h4>
+      <p>Group project written in C. We built out own file system, virtual memory and some basic system call upon the orginal pintos system.
+      </p>
+      <!-- <p><a href="airdbd_static/home.html">Static demo of the website</a></p>  -->
+      <img src="img/pintos.png" class="img-responsive margin displayed" style="width:100%" alt="Image">
+    </div>
+  </div>
 </div>
 
-<!-- Footer -->
-<footer class="container-fluid bg-1 text-center">
-    <!-- <p><a href="https://www.linkedin.com/in/annanwang/">My Linkedin</a></p>  -->
-  </footer>
-</body>
-</html>
+<!-- footer -->
+<style>
+	footer .glyphicon {
+	  font-size: 20px;
+	  margin-bottom: 20px;
+	  color: blue;
+	}
+	</style>
+
+	<footer class="container-fluid bg-1 text-center">
+	  <a href="#" title="To Top">
+	    <span class="glyphicon glyphicon-chevron-up"></span>
+	  </a>
+	  <p>Annan Wang 2020</p>
+	</footer>
