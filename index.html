@@ -36,7 +36,7 @@
     background-color: #464646;
   }
   .bg-2 { 
-    background-color: #474e5d; /* Dark Blue */
+    background-color: #153a8b; /* Dark Blue */
     color: #ffffff;
   }
   .bg-3 { 
@@ -45,6 +45,10 @@
   }
   .bg-4 { 
     background-color: #c0c0c0; /* Black Gray */
+    color: rgb(0, 0, 0);
+  }
+  .bg-5 { 
+    background-color: #4b97ee; /* Black Gray */
     color: rgb(0, 0, 0);
   }
   .container-fluid {
@@ -73,6 +77,10 @@
   -o-border-radius: 8px;
   border-radius: 8px;
 }
+  .main_text {
+    padding-right: 15%;
+    padding-left: 15%;
+  }
   </style>
 </head>
 <body>
@@ -84,15 +92,26 @@
   <h3>I'm an adventurer</h3>
 </div>
 
-<!-- Second Container -->
+<!-- As a student session -->
 <div class="container-fluid bg-2 text-center">
     <h3 class="margin">As a Student</h3>
-    <p>My love of Computer Science is built on the foundational belief that knowledge is the most powerful commodity in the world, 
+    <p class="main_text">My love of Computer Science is built on the foundational belief that knowledge is the most powerful commodity in the world, 
         and the internet democratizes this power so that humans are able to solve problems. </p>
     <a href="https://www.linkedin.com/in/annanwang/" class="btn btn-default btn-lg">
       <span class="glyphicon glyphicon-search"></span> Linkedin
     </a>
   </div>
+
+<!-- Intern session
+<div class="container-fluid bg-5 text-center">
+  <h2 class="margin">Internship</h2>
+  <div class="card bg-3" >
+    <img src="img/dv_logo.png" class="img-responsive margin displayed" style="width:15%" alt="Image">
+    <h3 class="main_text">Software Engineer Intern, July 2019 – Aug 2019 </h3>
+  </div> -->
+  
+  
+<!-- </div> -->
 
 <!-- Third Container (Grid) -->
 <div class="container-fluid bg-3 text-center">    
@@ -143,5 +162,5 @@
 	  <a href="#" title="To Top">
 	    <span class="glyphicon glyphicon-chevron-up"></span>
 	  </a>
-	  <p>Annan Wang 2020</p>
+	  <p>Annan Wang 2021</p>
 	</footer>
