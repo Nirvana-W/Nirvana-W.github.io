@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { NavLink } from "react-router-dom";
-import { lazy, Suspense, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 //Components
@@ -146,10 +146,14 @@ const DarkDiv = styled.div`
 `;
 
 const Main = () => {
-  const [click, setClick] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [path, setpath] = useState("");
 
-  const handleClick = () => setClick(!click);
+  useEffect(()=>{
+    setTimeout(()=>{
+      setLoading(true);
+    }, 2000)
+  },[]);
 
   const moveY = {
     y: "-100%",
@@ -168,38 +172,36 @@ const Main = () => {
         exit={path === "about" || path === "skills" ? moveY : moveX}
         transition={{ duration: 0.5 }}
       >
-        <DarkDiv click={click} />
+        <DarkDiv click={loading} />
         <Container>
-          <LogoComponent theme={click ? "dark" : "light"} />
+          <LogoComponent theme={loading ? "dark" : "light"} />
           <PowerButton />
           {mq ? (
             <SocialIcons theme="light" />
           ) : (
-            <SocialIcons theme={click ? "dark" : "light"} />
+            <SocialIcons theme={loading ? "dark" : "light"} />
           )}
-          <Center click={click}>
+          <Center click={loading}>
             {mq ? (
               <YinYang
-                onClick={() => handleClick()}
-                width={click ? 80 : 150}
-                height={click ? 80 : 150}
+                width={loading ? 80 : 150}
+                height={loading ? 80 : 150}
                 fill="currentColor"
               />
             ) : (
               <YinYang
-                onClick={() => handleClick()}
-                width={click ? 120 : 200}
-                height={click ? 120 : 200}
+                width={loading ? 120 : 200}
+                height={loading ? 120 : 200}
                 fill="currentColor"
               />
             )}
 
-            <span>click here</span>
+            <span>Welcome</span>
           </Center>
 
           {mq ? (
             <Contact
-              click={+click}
+              click={+loading}
               target="_blank"
               href="mailto:annanw0401@gmail.com"
             >
@@ -243,8 +245,8 @@ const Main = () => {
 
           <BottomBar>
             <ABOUT
-              onClick={() => setClick(false)}
-              click={mq ? +false : +click}
+              onClick={() => setLoading(false)}
+              click={mq ? +false : +loading}
               to="/about"
             >
               <motion.h2
@@ -284,7 +286,7 @@ const Main = () => {
           </BottomBar>
         </Container>
 
-        {click ? <Intro click={click} /> : null}
+        {loading ? <Intro click={loading} /> : null}
       </MainContainer>
     </Suspense>
   );
